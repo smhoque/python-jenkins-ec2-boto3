@@ -14,7 +14,7 @@ ufw allow 'Apache Full' || true
 """
 
 instances = ec2_resource.create_instances(
-    ImageId='ami-0c55b159cbfafe1d7',  # Ubuntu AMI (verify region)
+    ImageId='ami-00f46ccd1cbfb363e',  # Ubuntu AMI (verify region)
     MinCount=1,
     MaxCount=1,
     InstanceType='t2.micro',
