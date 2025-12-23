@@ -13,7 +13,7 @@ echo "<html><body><h1>My First EC2 Instance</h1></body></html>" > /var/www/html/
 
 ufw allow 'Apache Full' || true
 """
-
+# Launching an EC2 instance with the specified configurations
 instances = ec2_resource.create_instances(
     ImageId='ami-00f46ccd1cbfb363e',  # Ubuntu AMI (verify region)
     MinCount=1,
