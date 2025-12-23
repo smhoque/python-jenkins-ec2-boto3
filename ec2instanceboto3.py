@@ -2,6 +2,7 @@ import boto3
 
 ec2_resource = boto3.resource('ec2')
 
+# Following script installs Apache server and sets up a simple HTML page
 user_data_script = """#!/bin/bash
 apt update -y
 apt install -y apache2
